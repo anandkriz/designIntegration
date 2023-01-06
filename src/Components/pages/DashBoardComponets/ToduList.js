@@ -56,7 +56,7 @@ const Pagination = (props) => {
         </li>
     )
 }
-
+console.log()
 const List = (props) => {
     const { title, time, className } = props
     return (
