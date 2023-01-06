@@ -8,6 +8,7 @@ import Footer from './Components/Footer';
 import MainView from './Components/pages/MainView';
 import Dashboard from './Components/pages/Dashboard2';
 import Widgets from './Components/pages/Widgets';
+import ChartJs from './Components/pages/components/ChartJs';
 import { Route, Routes, BrowserRouter } from 'react-router-dom';
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/" element={<MainView />} />
           <Route path='dashboard-v2' element={<Dashboard />} />
           <Route path='widgets' element={<Widgets />} />
+          <Route path='chartjs' element={<ChartJs />} />
         </Routes>
         <Footer />
         {/* <MainView /> */}
