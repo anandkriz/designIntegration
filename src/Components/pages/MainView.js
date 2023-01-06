@@ -2,6 +2,7 @@ import React from "react";
 import SmallBox from "./components/SmallBox";
 import { BreadCrumb } from "./Dashboard2Components/Breadcrumb";
 
+
 function MainView() {
     return (
 
@@ -22,7 +23,6 @@ function MainView() {
                     <div class="row">
 
                         <section class="col-lg-7 connectedSortable">
-
                             <div class="card">
                                 <div class="card-header">
                                     <h3 class="card-title">
