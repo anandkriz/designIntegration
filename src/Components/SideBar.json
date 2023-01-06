@@ -1,0 +1,96 @@
+{
+  "dashboard": {
+    "title": "Dashboard",
+    "class_name": "nav-item menu-is-opening menu-open",
+    "active": "active",
+    "id": "dashboard",
+    "data": [
+      {
+        "title": "Dashboard v1",
+        "nagigation_link": "/"
+      },
+      {
+        "title": "Dashboard v2",
+        "nagigation_link": "dashboard-v2"
+      }
+    ]
+  },
+  "widgets": {
+    "title": "Widgets",
+    "class_name": "nav-item",
+    "nagigation_link": "/widgets",
+    "active": "",
+    "data": []
+  },
+  "layout_options": {
+    "title": "Layout Options",
+    "class_name": "nav-item",
+    "id": "layout_options",
+    "active": "",
+    "data": [
+      { "title": "Top Navigation", "nagigation_link": "/" },
+      { "title": "Top Navigation + Sidebar", "nagigation_link": "/" },
+      { "title": "Boxed", "nagigation_link": "/" },
+      { "title": "Fixed Sidebar", "nagigation_link": "/" },
+      { "title": "Fixed Sidebar + Custom Area", "nagigation_link": "/" },
+      { "title": "Fixed Navbar", "nagigation_link": "/" },
+      { "title": "Fixed Footer", "nagigation_link": "/" },
+      { "title": "Collapsed Sidebar", "nagigation_link": "/" },
+      { "title": "ChartJS", "nagigation_link": "/" },
+      { "title": "Flot", "nagigation_link": "/" },
+      { "title": "Inline", "nagigation_link": "/" },
+      { "title": " UI Elements", "nagigation_link": "/" }
+    ]
+  },
+  "charts_js": {
+    "title": "ChartJS",
+    "class_name": "nav-item",
+    "id": "charts_js",
+    "active": "",
+    "data": [
+      { "title": "Flot", "nagigation_link": "/" },
+      { "title": "Inline", "nagigation_link": "/" },
+      { "title": " UI Elements", "nagigation_link": "/" },
+      { "title": "uPlot", "nagigation_link": "/" }
+    ]
+  },
+  "ui_elements": {
+    "title": "UI Elements",
+    "class_name": "nav-item",
+    "id": "ui_elements",
+    "active": "",
+    "data": [
+      { "title": "Icons", "nagigation_link": "/" },
+      { "title": "Buttons", "nagigation_link": "/" },
+      { "title": "Sliders", "nagigation_link": "/" },
+      { "title": "Modals & Alerts", "nagigation_link": "/" },
+      { "title": "General", "nagigation_link": "/" },
+      { "title": "Navbar & Tabs", "nagigation_link": "/" },
+      { "title": "Timeline", "nagigation_link": "/" },
+      { "title": "Ribbons", "nagigation_link": "/" }
+    ]
+  },
+  "forms": {
+    "title": "Forms",
+    "class_name": "nav-item",
+    "id": "forms",
+    "active": "",
+    "data": [
+      { "title": "General Elements", "nagigation_link": "/" },
+      { "title": "Advanced Elements", "nagigation_link": "/" },
+      { "title": "Editors", "nagigation_link": "/" },
+      { "title": "Validation", "nagigation_link": "/" }
+    ]
+  },
+  "tables": {
+    "title": "Tables",
+    "class_name": "nav-item",
+    "id": "tables",
+    "active": "",
+    "data": [
+      { "title": "Simple Tables", "nagigation_link": "/" },
+      { "title": "DataTables", "nagigation_link": "/" },
+      { "title": "jsGrid", "nagigation_link": "/" }
+    ]
+  }
+}
