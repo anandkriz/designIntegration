@@ -272,7 +272,7 @@ function DirectChatVvvv() {
                     </div>
                 </form>
             </div>
-        </div>       <default/>
+        </div>
     )
 }
 // const Messages = (props) => {
