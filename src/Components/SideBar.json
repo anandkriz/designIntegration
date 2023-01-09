@@ -49,9 +49,9 @@
     "active": "",
     "data": [
       { "title": "Charts", "nagigation_link": "/chartjs" },
-      { "title": "Flot", "nagigation_link": "/" },
-      { "title": "Inline", "nagigation_link": "/" },
-      { "title": "uPlot", "nagigation_link": "/" }
+      { "title": "Flot", "nagigation_link": "/flot" },
+      { "title": "Inline", "nagigation_link": "/inline" },
+      { "title": "uPlot", "nagigation_link": "/uplot" }
     ]
   },
   "ui_elements": {

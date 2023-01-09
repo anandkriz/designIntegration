@@ -10,6 +10,9 @@ import Dashboard from './Components/pages/Dashboard2';
 import Widgets from './Components/pages/Widgets';
 import ChartJs from './Components/pages/components/ChartJs';
 import { Route, Routes, BrowserRouter } from 'react-router-dom';
+import Flot from './Components/pages/components/Flot';
+import Inline from './Components/pages/components/Inline';
+import Uplot from './Components/pages/components/Uplot';
 function App() {
   return (
 
@@ -25,6 +28,9 @@ function App() {
           <Route path='dashboard-v2' element={<Dashboard />} />
           <Route path='widgets' element={<Widgets />} />
           <Route path='chartjs' element={<ChartJs />} />
+          <Route path='flot' element={<Flot />} />
+          <Route path='inline' element={<Inline />} />
+          <Route path='uplot' element={<Uplot />} />
         </Routes>
         <Footer />
         {/* <MainView /> */}
