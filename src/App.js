@@ -13,6 +13,9 @@ import { Route, Routes, BrowserRouter } from 'react-router-dom';
 import Flot from './Components/pages/components/Flot';
 import Inline from './Components/pages/components/Inline';
 import Uplot from './Components/pages/components/Uplot';
+import General from './Components/pages/components/UiElements/General';
+import Buttons from './Components/pages/components/UiElements/Buttons';
+import Sliders from './Components/pages/components/UiElements/Sliders';
 function App() {
   return (
 
@@ -31,6 +34,9 @@ function App() {
           <Route path='flot' element={<Flot />} />
           <Route path='inline' element={<Inline />} />
           <Route path='uplot' element={<Uplot />} />
+          <Route path='general' element={<General />} />
+          <Route path='buttons' element={<Buttons />} />
+          <Route path='Sliders' element={<Sliders />} />
         </Routes>
         <Footer />
         {/* <MainView /> */}

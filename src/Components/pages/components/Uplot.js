@@ -2,14 +2,17 @@ import React from 'react'
 import { BreadCrumb } from '../Dashboard2Components/Breadcrumb'
 function Uplot() {
     return (
-        <section class="content-wrapper">
-            <BreadCrumb heading="Uplot Charts" />
-            <div class="container-fluid">
-                {/* <!-- AREA CHART --> */}
-                <CardBody heading="Area Chart" className="card card-primary" id="areaChart" />
-                <CardBody heading="Line Chart" className="card card-info" id="lineChart" />
-            </div>
-        </section>
+        <div className='content-wrapper'>
+            <section class="content">
+                <BreadCrumb heading="Uplot Charts" />
+                <div class="container-fluid">
+                    <CardBody heading="Area Chart" className="card card-primary" id="areaChart" />
+                    <CardBody heading="Line Chart" className="card card-info" id="lineChart" />
+                </div>
+            </section>
+        </div>
+
+
     )
 }
 

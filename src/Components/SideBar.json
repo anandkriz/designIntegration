@@ -35,11 +35,7 @@
       { "title": "Fixed Sidebar + Custom Area", "nagigation_link": "/" },
       { "title": "Fixed Navbar", "nagigation_link": "/" },
       { "title": "Fixed Footer", "nagigation_link": "/" },
-      { "title": "Collapsed Sidebar", "nagigation_link": "/" },
-      { "title": "ChartJS", "nagigation_link": "/" },
-      { "title": "Flot", "nagigation_link": "/" },
-      { "title": "Inline", "nagigation_link": "/" },
-      { "title": " UI Elements", "nagigation_link": "/" }
+      { "title": "Collapsed Sidebar", "nagigation_link": "/" }
     ]
   },
   "charts_js": {
@@ -60,14 +56,14 @@
     "id": "ui_elements",
     "active": "",
     "data": [
-      { "title": "Icons", "nagigation_link": "/" },
-      { "title": "Buttons", "nagigation_link": "/" },
-      { "title": "Sliders", "nagigation_link": "/" },
-      { "title": "Modals & Alerts", "nagigation_link": "/" },
-      { "title": "General", "nagigation_link": "/" },
-      { "title": "Navbar & Tabs", "nagigation_link": "/" },
-      { "title": "Timeline", "nagigation_link": "/" },
-      { "title": "Ribbons", "nagigation_link": "/" }
+      { "title": "General", "nagigation_link": "/general" },
+      { "title": "Icons", "nagigation_link": "/icons" },
+      { "title": "Buttons", "nagigation_link": "/buttons" },
+      { "title": "Sliders", "nagigation_link": "/sliders" },
+      { "title": "Modals & Alerts", "nagigation_link": "/modals-&-alerts" },
+      { "title": "Navbar & Tabs", "nagigation_link": "/navbar-&-tabs" },
+      { "title": "Timeline", "nagigation_link": "/timeline" },
+      { "title": "Ribbons", "nagigation_link": "/ribbons" }
     ]
   },
   "forms": {
