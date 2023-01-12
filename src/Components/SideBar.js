@@ -7,6 +7,7 @@ import Data from './SideBar.json'
 import { Examples } from "./pages/SidebarOptions";
 function SideBar() {
     const navigete = useNavigate();
+
     const handleChange = (id, title, navlink) => {
         if (!navlink) {
             let element = document.getElementById(id)

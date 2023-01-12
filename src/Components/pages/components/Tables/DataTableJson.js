@@ -1,0 +1,10 @@
+export const DataTable = [{ "engine": "Misc", "browser": "Safari", "css_grad": "A", "platform": "windows xp", "version": "8.9" },
+{ "engine": "Tasman", "browser": "crome", "css_grad": "b", "platform": "windows xp", "version": "81.9" },
+{ "engine": "Gecko", "browser": "Opera", "css_grad": "A", "platform": "windows 7", "version": "10.9" },
+{ "engine": "Misc", "browser": "Safari", "css_grad": "A", "platform": "windows 11", "version": "60.9" },
+{ "engine": "Webkit", "browser": "Opera", "css_grad": "c", "platform": "windows 10", "version": "822.9" },
+{ "engine": "Misc", "browser": "Mozilla", "css_grad": "e", "platform": "windows xp", "version": "33.9" },
+{ "engine": "KHTML", "browser": "Safari", "css_grad": "A", "platform": "mac", "version": "8.9" },
+{ "engine": "Gecko", "browser": "Opera", "css_grad": "A", "platform": "windows 8", "version": "84.9" },
+{ "engine": "Tasman", "browser": "crome", "css_grad": "d", "platform": "linex", "version": "566.9" },
+{ "engine": "Webkit", "browser": "Mozilla", "css_grad": "f", "platform": "ubentu", "version": "12.9" }]

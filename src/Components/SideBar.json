@@ -73,7 +73,7 @@
     "active": "",
     "data": [
       { "title": "General Elements", "nagigation_link": "/" },
-      { "title": "Advanced Elements", "nagigation_link": "/" },
+      { "title": "Advanced Elements", "nagigation_link": "advanced_form" },
       { "title": "Editors", "nagigation_link": "/" },
       { "title": "Validation", "nagigation_link": "/" }
     ]
@@ -84,8 +84,8 @@
     "id": "tables",
     "active": "",
     "data": [
-      { "title": "Simple Tables", "nagigation_link": "/" },
-      { "title": "DataTables", "nagigation_link": "/" },
+      { "title": "Simple Tables", "nagigation_link": "/simple-table" },
+      { "title": "DataTables", "nagigation_link": "/data-table" },
       { "title": "jsGrid", "nagigation_link": "/" }
     ]
   }
