@@ -1,4 +1,4 @@
-export const DataTable = [{ "engine": "Misc", "browser": "Safari", "css_grad": "A", "platform": "windows xp", "version": "8.9" },
+export const dataTable = [{ "engine": "Misc", "browser": "Safari", "css_grad": "A", "platform": "windows xp", "version": "8.9" },
 { "engine": "Tasman", "browser": "crome", "css_grad": "b", "platform": "windows xp", "version": "81.9" },
 { "engine": "Gecko", "browser": "Opera", "css_grad": "A", "platform": "windows 7", "version": "10.9" },
 { "engine": "Misc", "browser": "Safari", "css_grad": "A", "platform": "windows 11", "version": "60.9" },
