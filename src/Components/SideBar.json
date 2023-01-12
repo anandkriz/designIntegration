@@ -75,7 +75,7 @@
       { "title": "General Elements", "nagigation_link": "/" },
       { "title": "Advanced Elements", "nagigation_link": "advanced_form" },
       { "title": "Editors", "nagigation_link": "/" },
-      { "title": "Validation", "nagigation_link": "/" }
+      { "title": "Validation", "nagigation_link": "/validation" }
     ]
   },
   "tables": {

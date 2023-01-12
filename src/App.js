@@ -21,6 +21,7 @@ import Ribbons from './Components/pages/components/UiElements/Ribbons';
 import AdvancedForm from './Components/pages/components/forms/AdvancedForm';
 import SimpleTable from './Components/pages/components/Tables/SimpleTable';
 import DataTable from './Components/pages/components/Tables/DataTable';
+import Validation from './Components/pages/components/forms/Validation';
 
 
 function App() {
@@ -49,6 +50,8 @@ function App() {
           <Route path='advanced_form' element={<AdvancedForm />} />
           <Route path='simple-table' element={<SimpleTable />} />
           <Route path='data-table' element={<DataTable />} />
+          <Route path='validation' element={<Validation />} />
+
         </Routes>
         <Footer />
         {/* <MainView /> */}
