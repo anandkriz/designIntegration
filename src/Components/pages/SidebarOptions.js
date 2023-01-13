@@ -8,9 +8,9 @@ export const Examples = {
         data: []
     },
     Gallery: {
-        title: "Calendar",
+        title: "Gallery",
         class_name: "nav-item",
-        nagigation_link: "/widgets",
+        nagigation_link: "/gallery",
         active: "",
         data: []
     },
