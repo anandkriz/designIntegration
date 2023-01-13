@@ -1,5 +1,7 @@
 import React from 'react'
 import { BreadCrumb } from '../../Dashboard2Components/Breadcrumb'
+import { CardTitle } from './General'
+import { modalDetails } from './modalJson'
 
 function Modal() {
     return (
@@ -10,34 +12,13 @@ function Modal() {
                     <div class="row">
                         <div class="col-md-12">
                             <div class="card card-primary card-outline">
-                                <div class="card-header">
-                                    <h3 class="card-title">
-                                        <i class="fas fa-edit"></i>
-                                        Modal Examples
-                                    </h3>
-                                </div>
+                                <CardTitle title="Modal Examples" />
                                 <div class="card-body">
-                                    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#modal-default">
-                                        Launch Default Modal
-                                    </button>
-                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-primary">
-                                        Launch Primary Modal
-                                    </button>
-                                    <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#modal-secondary">
-                                        Launch Secondary Modal
-                                    </button>
-                                    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#modal-info">
-                                        Launch Info Modal
-                                    </button>
-                                    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modal-danger">
-                                        Launch Danger Modal
-                                    </button>
-                                    <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modal-warning">
-                                        Launch Warning Modal
-                                    </button>
-                                    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modal-success">
-                                        Launch Success Modal
-                                    </button>
+                                    {modalDetails.map(({ title, btn_class }) =>
+                                        <button type="button" class={btn_class} data-toggle="modal" data-target="#modal-default">
+                                            {title}
+                                        </button>
+                                    )}
                                     <br />
                                     <br />
                                     <button type="button" class="btn btn-default" data-toggle="modal" data-target="#modal-sm">
