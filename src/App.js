@@ -16,7 +16,7 @@ import Uplot from './Components/pages/components/Uplot';
 import General from './Components/pages/components/UiElements/General';
 import Buttons from './Components/pages/components/UiElements/Buttons';
 import Sliders from './Components/pages/components/UiElements/Sliders';
-import Modal from './Components/pages/components/UiElements/Modal';
+import Modall from './Components/pages/components/UiElements/Modal';
 import Ribbons from './Components/pages/components/UiElements/Ribbons';
 import AdvancedForm from './Components/pages/components/forms/AdvancedForm';
 import SimpleTable from './Components/pages/components/Tables/SimpleTable';
@@ -46,7 +46,7 @@ function App() {
           <Route path='general' element={<General />} />
           <Route path='buttons' element={<Buttons />} />
           <Route path='Sliders' element={<Sliders />} />
-          <Route path='modals-&-alerts' element={<Modal />} />
+          <Route path='modals-&-alerts' element={<Modall />} />
           <Route path='ribbons' element={<Ribbons />} />
           <Route path='advanced_form' element={<AdvancedForm />} />
           <Route path='simple-table' element={<SimpleTable />} />

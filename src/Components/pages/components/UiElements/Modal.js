@@ -1,9 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { BreadCrumb } from '../../Dashboard2Components/Breadcrumb'
 import { CardTitle } from './General'
 import { modalDetails } from './modalJson'
+import Modal from 'react-modal';
 
-function Modal() {
+function Modall() {
+
+    const [status, setStatus] = useState(false)
+    const [color, setColor] = useState()
+    const OnHandleClick = (title, color) => {
+        setStatus(true)
+        const details = { "title": title, "color": color }
+        setColor(details)
+
+    }
     return (
         <div className='content-wrapper'>
             <BreadCrumb heading="Modals & Alerts" />
@@ -14,8 +24,8 @@ function Modal() {
                             <div class="card card-primary card-outline">
                                 <CardTitle title="Modal Examples" />
                                 <div class="card-body">
-                                    {modalDetails.map(({ title, btn_class }) =>
-                                        <button type="button" class={btn_class} data-toggle="modal" data-target="#modal-default">
+                                    {modalDetails.map(({ title, btn_class, color, }) =>
+                                        <button onClick={() => OnHandleClick(title, color)} type="button" class={btn_class} data-toggle="modal" data-target="#modal-default">
                                             {title}
                                         </button>
                                     )}
@@ -157,7 +167,7 @@ function Modal() {
                     </div>
 
                 </div>
-                <div class="modal fade" id="modal-default">
+                {/* <div class="modal fade" id="modal-default">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
@@ -218,7 +228,6 @@ function Modal() {
                             </div>
                         </div>
                     </div>
-
                 </div>
 
 
@@ -381,11 +390,59 @@ function Modal() {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
 
             </section>
+            <Modals status={status} close={() => setStatus(false)} color={color} />
         </div>
     )
 }
 
-export default Modal
+const Modals = ({ close, color, status }) => {
+    return (
+
+        <div>
+            <Modal
+                isOpen={status}
+                // style={{}}
+                style={customStyles}
+            >
+
+
+                <div class={`  ${color?.color}`}>
+                    <div class="modal-header">
+                        <h4 class="modal-title">{color?.title}</h4>
+                        <button onClick={close} type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>One fine body&hellip;</p>
+                    </div>
+                    <div class="modal-footer justify-content-between">
+                        <button onClick={close} type="button" class={color?.color == "" ? "btn btn-default" : "btn btn-outline-light"} data-dismiss="modal">Close</button>
+                        <button type="button" class={color?.color == "" ? "btn btn-primary" : "btn btn-outline-light"}>Save changes</button>
+                    </div>
+                </div>
+
+
+            </Modal>
+
+        </div >
+    );
+}
+const customStyles = {
+    content: {
+
+        width: '25%',
+        top: '30%',
+        left: '50%',
+        right: 'auto',
+        bottom: 'auto',
+        marginRight: '-50%',
+        transform: 'translate(-50%, -50%)',
+
+    },
+};
+
+export default Modall
