@@ -114,7 +114,7 @@ function SideBar() {
                             {Object.keys(Data).map((item) =>
                                 <li className={Data[item]?.class_name} >
                                     <div className={`nav-link ${Data[item]?.active}`} onClick={() => handleChange(Data[item]?.id, Data[item]?.title, Data[item]?.nagigation_link)} >
-                                        <p>
+                                        <p className="text-white">
                                             {Data[item]?.title}
                                             <i className="right fas fa-angle-left"></i>
                                         </p>
@@ -125,7 +125,7 @@ function SideBar() {
                                             <li className="nav-item">
                                                 <div style={{ cursor: "pointer" }} className="nav-link" onClick={() => navigete(nagigation_link)}>
                                                     <i className="far fa-circle nav-icon"></i>
-                                                    <p>* {title}</p>
+                                                    <p>{title}</p>
                                                 </div>
                                             </li>
                                         )
@@ -141,7 +141,7 @@ function SideBar() {
                             {Object.keys(Examples).map((item) =>
                                 <li className={Examples[item]?.class_name} >
                                     <div className={`nav-link ${Examples[item]?.active}`} onClick={() => handleChange(Examples[item]?.id, Examples[item]?.title, Examples[item]?.nagigation_link)} >
-                                        <p>
+                                        <p className="text-white">
                                             {Examples[item]?.title}
                                             <i className="right fas fa-angle-left"></i>
                                         </p>
@@ -152,7 +152,7 @@ function SideBar() {
                                             <li className="nav-item">
                                                 <div style={{ cursor: "pointer" }} className="nav-link" onClick={() => navigete(nagigation_link)}>
                                                     <i className="far fa-circle nav-icon"></i>
-                                                    <p>* {title}</p>
+                                                    <p>*{title}</p>
                                                 </div>
                                             </li>
                                         )

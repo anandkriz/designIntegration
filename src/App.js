@@ -23,6 +23,7 @@ import SimpleTable from './Components/pages/components/Tables/SimpleTable';
 import DataTable from './Components/pages/components/Tables/DataTable';
 import Validation from './Components/pages/components/forms/Validation';
 import Gallery from './Components/pages/components/Gallery';
+import NavBar from './Components/pages/components/UiElements/NavBar';
 
 
 function App() {
@@ -52,7 +53,9 @@ function App() {
           <Route path='simple-table' element={<SimpleTable />} />
           <Route path='data-table' element={<DataTable />} />
           <Route path='validation' element={<Validation />} />
-          <Route path='gallery' element={<Gallery />} />
+          <Route path='gallery' element={<Gallery />} />navbar-&-tabs
+          <Route path='navbar-&-tabs' element={<NavBar />} />
+
 
         </Routes>
         <Footer />
