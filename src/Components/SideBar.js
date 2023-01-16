@@ -86,30 +86,6 @@ function SideBar() {
                             role="menu"
                             data-accordion="false"
                         >
-                            {/* Add icons to the links using the .nav-icon class
-               with font-awesome or any other icon font library */}
-                            {/* <li className="nav-item menu-open">
-                                <a href="#" className="nav-link active">
-                                    <p>
-                                        Dashboard
-                                        <i className="right fas fa-angle-left"></i>
-                                    </p>
-                                </a>
-                                <ul className="nav nav-treeview">
-                                    <li className="nav-item">
-                                        <div style={{ cursor: "pointer" }} className="nav-link active" onClick={() => navigete('/')}>
-                                            <i className="far fa-circle nav-icon"></i>
-                                            <p>Dashboard v1</p>
-                                        </div>
-                                    </li>
-                                    <li className="nav-item">
-                                        <div style={{ cursor: "pointer" }} className="nav-link" onClick={() => navigete('dashboard-v2')}>
-                                            <i className="far fa-circle nav-icon"></i>
-                                            <p>Dashboard v2</p>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li> */}
 
                             {Object.keys(Data).map((item) =>
                                 <li className={Data[item]?.class_name} >
@@ -134,10 +110,7 @@ function SideBar() {
                                 </li>
                             )
                             }
-
-
                             <li class="nav-header">EXAMPLES</li>
-
                             {Object.keys(Examples).map((item) =>
                                 <li className={Examples[item]?.class_name} >
                                     <div className={`nav-link ${Examples[item]?.active}`} onClick={() => handleChange(Examples[item]?.id, Examples[item]?.title, Examples[item]?.nagigation_link)} >
@@ -152,7 +125,7 @@ function SideBar() {
                                             <li className="nav-item">
                                                 <div style={{ cursor: "pointer" }} className="nav-link" onClick={() => navigete(nagigation_link)}>
                                                     <i className="far fa-circle nav-icon"></i>
-                                                    <p>*{title}</p>
+                                                    <p>{title}</p>
                                                 </div>
                                             </li>
                                         )

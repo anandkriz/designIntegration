@@ -3,7 +3,7 @@ export const Examples = {
     calendar: {
         title: "Calendar",
         class_name: "nav-item",
-        nagigation_link: "/widgets",
+        nagigation_link: "/calender",
         active: "",
         data: []
     },
@@ -27,7 +27,7 @@ export const Examples = {
         id: "mailbox",
         active: "",
         data: [
-            { title: "Inbox", nagigation_link: "/" },
+            { title: "Inbox", nagigation_link: "/inbox" },
             { title: "Compose", nagigation_link: "/" },
             { title: "Read", nagigation_link: "/" }
         ]
@@ -44,9 +44,10 @@ export const Examples = {
             { title: "Project Add", nagigation_link: "/" },
             { title: "Project Edit", nagigation_link: "/" },
             { title: "Project Detail", nagigation_link: "/" },
-            { title: "Contacts", nagigation_link: "/" },
-            { title: "FAQ", nagigation_link: "/" },
-            { title: "Contact us", nagigation_link: "/" }
+            { title: "Contacts", nagigation_link: "/contacts" },
+            { title: "FAQ", nagigation_link: "/faq" },
+            { title: "404-error", nagigation_link: "/404-error" },
+            { title: "Contact us", nagigation_link: "/contact-us" }
         ]
     },
     extras: {
@@ -59,13 +60,7 @@ export const Examples = {
             { title: "Login v1", nagigation_link: "/" },
             { title: "Register v1", nagigation_link: "/" },
             { title: "Forgot Password v1", nagigation_link: "/" },
-            { title: "Recover Password v1", nagigation_link: "/" },
-            { title: "jsGrid", nagigation_link: "/" },
-            { title: "Simple Tables", nagigation_link: "/" },
-            { title: "DataTables", nagigation_link: "/" },
-            { title: "jsGrid", nagigation_link: "/" },
-            { title: "Simple Tables", nagigation_link: "/" },
-            { title: "DataTables", nagigation_link: "/" },
+            { title: "404-Error", nagigation_link: "/404-error" },
             { title: "jsGrid", nagigation_link: "/" }
 
         ]

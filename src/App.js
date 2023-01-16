@@ -24,19 +24,20 @@ import DataTable from './Components/pages/components/Tables/DataTable';
 import Validation from './Components/pages/components/forms/Validation';
 import Gallery from './Components/pages/components/Gallery';
 import NavBar from './Components/pages/components/UiElements/NavBar';
-
+import Inbox from './Components/pages/components/mailbox/Inbox';
+import Faq from './Components/pages/components/pages/Faq';
+import Error404 from './Components/pages/components/pages/Error404';
+import ContactUs from './Components/pages/components/pages/ContactUs';
+import Editors from './Components/pages/components/forms/Editors';
+import Calender from './Components/pages/Calender';
 
 function App() {
   return (
-
-
     <div class="wrapper">
-
       <BrowserRouter>
         <Header />
         <SideBar />
         <Routes>
-
           <Route path="/" element={<MainView />} />
           <Route path='dashboard-v2' element={<Dashboard />} />
           <Route path='widgets' element={<Widgets />} />
@@ -53,9 +54,14 @@ function App() {
           <Route path='simple-table' element={<SimpleTable />} />
           <Route path='data-table' element={<DataTable />} />
           <Route path='validation' element={<Validation />} />
-          <Route path='gallery' element={<Gallery />} />navbar-&-tabs
+          <Route path='gallery' element={<Gallery />} />
           <Route path='navbar-&-tabs' element={<NavBar />} />
-
+          <Route path='inbox' element={<Inbox />} />
+          <Route path='faq' element={<Faq />} />
+          <Route path='404-error' element={<Error404 />} />
+          <Route path='contact-us' element={<ContactUs />} />
+          <Route path='editors' element={<Editors />} />
+          <Route path='calender' element={<Calender />} />
 
         </Routes>
         <Footer />
