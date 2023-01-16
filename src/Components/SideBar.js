@@ -95,7 +95,7 @@ function SideBar() {
                                             <i className="right fas fa-angle-left"></i>
                                         </p>
                                     </div>
-                                    <ul className="nav nav-treeview" id={Data[item]?.id}>
+                                    <ul className="nav nav-treeview active " id={Data[item]?.id}>
                                         {Data[item]?.data.map(({ title, nagigation_link }) =>
 
                                             <li className="nav-item">
@@ -134,7 +134,7 @@ function SideBar() {
                                 </li>
                             )
                             }
-                            <li class="nav-header">MISCELLANEOUS</li>
+                            {/* <li class="nav-header">MISCELLANEOUS</li>
                             <li class="nav-item">
                                 <a href="iframe.html" class="nav-link">
                                     <i class="nav-icon fas fa-ellipsis-h"></i>
@@ -230,7 +230,7 @@ function SideBar() {
                                     <i class="nav-icon far fa-circle text-info"></i>
                                     <p>Informational</p>
                                 </a>
-                            </li>
+                            </li> */}
                         </ul>
                     </nav>
                     {/* <!-- /.sidebar-menu --> */}

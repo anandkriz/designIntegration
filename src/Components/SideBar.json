@@ -17,6 +17,7 @@
   },
   "widgets": {
     "title": "Widgets",
+    "id":"widgets",
     "class_name": "nav-item",
     "nagigation_link": "/widgets",
     "active": "",

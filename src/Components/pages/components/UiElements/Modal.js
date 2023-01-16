@@ -3,10 +3,8 @@ import { BreadCrumb } from '../../Dashboard2Components/Breadcrumb'
 import { CardTitle } from './General'
 import { modalDetails, tostify, tostifySweet } from './modalJson'
 import Modal from 'react-modal';
-import { ToastsContainer, ToastsStore } from 'react-toasts';
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer, toast } from 'react-toastify';
-import SweetAlert from 'sweetalert2-react';
 
 function Modall() {
     const [status, setStatus] = useState(false)

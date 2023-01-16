@@ -1,10 +1,20 @@
-import React, { useState, useMemo, useRef } from 'react'
+import React, { useState,  useRef } from 'react'
 import { BreadCrumb } from '../../Dashboard2Components/Breadcrumb'
 import { CardTitle } from '../UiElements/General'
 import JoditEditor from 'jodit-react';
+import CodeMirror from '@uiw/react-codemirror';
+// import { javascript } from '@codemirror/lang-javascript';
+// import CodeMirror from "@uiw/react-codemirror";
+// import { markdown, markdownLanguage } from "@codemirror/lang-markdown";
+// import { languages } from "@codemirror/language-data";
+
 function Editors() {
     const editor = useRef(null);
     const [content, setContent] = useState('');
+
+    const onChange = React.useCallback((value, viewUpdate) => {
+        console.log('value:', value);
+      }, []);
     return (
         <div class="content-wrapper">
             <BreadCrumb heading="Text Editors" />
@@ -28,7 +38,7 @@ function Editors() {
                         <div class="card card-outline card-info">
                             <CardTitle title="CodeMirror" />
                             <div class="card-body p-0">
-                                <textarea id="codeMirrorDemo" class="p-3">
+                                {/* <textarea id="codeMirrorDemo" class="p-3">
                                     <div class="info-box bg-gradient-info">
                                         <span class="info-box-icon"><i class="far fa-bookmark"></i></span>
                                         <div class="info-box-content">
@@ -42,7 +52,15 @@ function Editors() {
                                             </span>
                                         </div>
                                     </div>
-                                </textarea>
+                                </textarea> */}
+                                <CodeMirror
+                                value={content}
+                                    // value="console.log('hello world!');"
+                                    height="200px"
+                                    // extensions={[javascript({ jsx: true })]}
+                                    onChange={onChange}
+                                />
+
                             </div>
 
                         </div>

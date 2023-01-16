@@ -4,7 +4,7 @@ import Modal from 'react-modal';
 import { CardTitle } from './UiElements/General';
 
 function Gallery() {
-
+    console.log(window.location.pathname);
 
     const [data, setData] = useState(GalleryImg)
 
