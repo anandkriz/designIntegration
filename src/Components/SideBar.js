@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import './Commen.css';
 import { FaTachometerAlt } from 'react-icons/fa';
 import { useNavigate } from "react-router-dom";
@@ -23,10 +23,12 @@ function SideBar() {
         } else {
             navigete(navlink)
         }
-
-
+        setHead(id)
+        console.log(id)
     }
-    console.log(Data)
+
+    const [head,setHead]=useState('dashboard')
+    const [subhead,setSubHead]=useState('/')
     return (
         <>
 
@@ -89,7 +91,7 @@ function SideBar() {
 
                             {Object.keys(Data).map((item) =>
                                 <li className={Data[item]?.class_name} >
-                                    <div className={`nav-link ${Data[item]?.active}`} onClick={() => handleChange(Data[item]?.id, Data[item]?.title, Data[item]?.nagigation_link)} >
+                                    <div className={`nav-link ${head===Data[item]?.id?"active":""}`} onClick={() => handleChange(Data[item]?.id, Data[item]?.title, Data[item]?.nagigation_link)} >
                                         <p className="text-white">
                                             {Data[item]?.title}
                                             <i className="right fas fa-angle-left"></i>
@@ -99,7 +101,7 @@ function SideBar() {
                                         {Data[item]?.data.map(({ title, nagigation_link }) =>
 
                                             <li className="nav-item">
-                                                <div style={{ cursor: "pointer" }} className="nav-link" onClick={() => navigete(nagigation_link)}>
+                                                <div style={{ cursor: "pointer" }} className={`nav-link ${subhead===nagigation_link?"active":""}`} onClick={() => (navigete(nagigation_link),setSubHead(nagigation_link))}>
                                                     <i className="far fa-circle nav-icon"></i>
                                                     <p>{title}</p>
                                                 </div>

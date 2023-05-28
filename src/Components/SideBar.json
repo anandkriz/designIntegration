@@ -23,22 +23,7 @@
     "active": "",
     "data": []
   },
-  "layout_options": {
-    "title": "Layout Options",
-    "class_name": "nav-item",
-    "id": "layout_options",
-    "active": "",
-    "data": [
-      { "title": "Top Navigation", "nagigation_link": "/" },
-      { "title": "Top Navigation + Sidebar", "nagigation_link": "/" },
-      { "title": "Boxed", "nagigation_link": "/" },
-      { "title": "Fixed Sidebar", "nagigation_link": "/" },
-      { "title": "Fixed Sidebar + Custom Area", "nagigation_link": "/" },
-      { "title": "Fixed Navbar", "nagigation_link": "/" },
-      { "title": "Fixed Footer", "nagigation_link": "/" },
-      { "title": "Collapsed Sidebar", "nagigation_link": "/" }
-    ]
-  },
+
   "charts_js": {
     "title": "ChartJS",
     "class_name": "nav-item",
